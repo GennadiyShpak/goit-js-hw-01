@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>homework-01</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-menu">
+        <ul class="nav-menu_list">
+          <li class="nav-menu_item"><a href="#task1" class="nav-menu_link">Задание 1</a></li>
+          <li class="nav-menu_item"><a href="#task2" class="nav-menu_link">Задание 2</a></li>
+          <li class="nav-menu_item"><a href="#task3" class="nav-menu_link">Задание 3</a></li>
+          <li class="nav-menu_item"><a href="#task4" class="nav-menu_link">Задание 4</a></li>
+          <li class="nav-menu_item"><a href="#task5" class="nav-menu_link">Задание 5</a></li>
+          <li class="nav-menu_item"><a href="#task6" class="nav-menu_link">Задание 6</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="task title-padding" id="task1">
+      <h1 class="main-title">Модуль 1</h1>
+      <h2 class="section-title" >Задание 1</h2>
+      <ul class="task_list">
+        <li class="task_item">
+          Объяви две переменные хранящие название и цену товара:
+          <span class="mark">name</span> и <span class="mark">price</span>
+        </li>
+        <li class="task_item"><p>Присвой переменным следующие характеристики товара (сразу при объявлении)
+          <ul class="sub-task_list">
+            <li class="sub-task_item">название: Генератор защитного поля</li>
+            <li class="sub-task_item">цена: 1000</li>
+          </ul>
+        </p></li>
+        <li class="task_item">Используя шаблонную строку выведи в консоль информацию о товаре, получится: <span class="mark">'Выбран «Генератор защитного поля», цена за штуку 1000 кредитов'.</span></li>
+        <li class="task_item">Присвой товару новую цену - 2000</li>
+        <li class="task_item">Используя шаблонную строку выведи в консоль информацию о товаре, получится: <span class="mark">'Выбран «Генератор защитного поля», цена за штуку 2000 кредитов'.</span></li>
+      </ul>
+      <div class="button-wrapper">
+        <button type="button" class="task-one">Запустить скрипт</button>
+      </div>
+    </section>
+    <section class="task" id="task2">
+      <h2 class="section-title">Задание 2</h2>
+      <p>Напиши скрипт проверки количества товаров на складе. Есть переменные total (количество товаров на складе) и ordered (единиц товара в заказе).</p>
+      <p>Сравни эти значения и по результатам выведи:</p>
+      <ul class="task-list">
+        <li class="task_item">Если в заказе указано число, превышающее количество товаров на складе, то выведи сообщение <span class="mark">"На складе недостаточно твоаров!"</span>.</li>
+        <li class="task_item">В другом случае выводи сообщение <span class="mark">"Заказ оформлен, с вами свяжется менеджер"</span>.
+      </ul>
+      <p>Проверь работоспособность кода с разными значениями переменной <span class="mark">ordered</span>, например <span class="mark">20</span>, <span class="mark">80</span> и <span class="mark">130</span>.</p>
+      <div class="input_wrapper">
+          <label>Введите интересующее количество товара.
+          <input type="number" class="input_task2">
+        </label>
+        <div class="button-wrapper">
+          <button type="button" class="task-two">Купить товар</button>
+        </div>
+      </div>  
+    </section>
+    <section class="task"  id="task3">
+      <h2 class="section-title">Задание 3</h2>
+      <p>Напиши скрипт имитирующий авторизацию администратора в панели управления.</p>
+      <p>Есть переменная <span class="mark">message</span> в которую будет записано сообщение о результате. При загрузке страницы у посетителя запрашивается пароль через <span class="mark">prompt:</span></p>
+     <ul class="task-list">
+        <li class="task_item">Если нажали <span class="mark">Cancel</span>, записать в <span class="mark">message</span> строку <span class="mark">'Отменено пользователем!'</span></li>
+        <li class="task_item">В противном случае, если введен пароль который совпадает со значением константы <span class="mark">ADMIN_PASSWORD</span>, записать в <span class="mark">message</span> строку <span class="mark">'Добро пожаловать!'</span></li>
+        <li class="task_item">В противном случае, то есть если ни одно из предыдущих условий не выполнилось, записать в <span class="mark">message</span> строку <span class="mark">'Доступ запрещен, неверный пароль!'</span></li>
+        <li class="task_item">После всех проверок вывести в <span class="mark">alert</span> значение переменной <span class="mark">message</span>.</li>
+      </ul>
+      <div class="input_wrapper">
+        <label>Введите пароль.
+          <input  class="input_task3" type="password">
+        </label>
+        <div class="button-wrapper">
+          <button type="button" class="task-three_ok">Ок</button>
+        </div>
+        <div class="button-wrapper">
+          <button type="button" class="task-three_cancel">Отмена</button>
+        </div>
+      </div>
+    </section>
+    <section class="task" id="task4">
+      <h2 class="section-title">Задание 4</h2>
+      <p>На счету пользователя есть <span class="mark">23580</span> кредитов, значение хранится в переменной <span class="mark">credits</span> (создай и присвой). Пользователь решает купить ремонтных дроидов, которые стоят по <span class="mark">3000</span> кредитов за штуку. Цена одного дроида хранится в переменной <span class="mark">pricePerDroid</span> (создай и присвой).</p>
+    <p>При посещении страницы, используя <span class="mark">prompt</span>, необходимо спросить количество дроидов которые пользователь хочет купить и сохранить в переменную.</p>
+  <p>Напиши скрипт который:</p>  
+  <ul class="task-list">
+    <li class="task_item">Если в prompt была нажата кнопка Cancel, выводит в консоль сообщение 'Отменено пользователем!'.</li>
+    <li class="task_item">В противном случае, рассчитывает общую цену заказа и сохраняет в переменной totalPrice.</li>
+    <li class="task_item"><p>Проверяет сможет ли пользователь оплатить заказ:</p>
+      <ul class="task_sublist">
+        <li class="task_subitem">если сумма к оплате превышает количество кредитов на счету, выводи в консоль сообщение <span class="mark">'Недостаточно средств на счету!'</span>.</li>
+        <li class="task_subitem">в противном случае необходимо посчитать остаток кредитов на счету и вывести сообщение <span class="mark">'Вы купили [число] дроидов, на счету осталось [число] кредитов.'</span>.</li>
+      </ul></li>
+  </ul>
+  <div class="input_wrapper">
+    <label>Какое количество дроидов желаете приобрести? Цена 3000 кредитов/шт.
+      <input  class="input_task4" type="number">
+    </label>
+    <div class="button-wrapper">
+      <button type="button" class="task-four_ok">Ок</button>
+    </div>
+    <div class="button-wrapper">
+      <button type="button" class="task-four_cancel">Отмена</button>
+    </div>
+  </div>
+  </section>
+    <section class="task" id="task5">
+      <h2 class="section-title">Задание 5</h2>
+      <p class="task5_paragraph">Пользователь может оформить доставку товара к себе в страну, указав ее при посещении страницы в <span class="mark">prompt</span>. Учти, пользователь может ввести имя страны не только буквами нижнего регистра, а к примеру <span class="mark">'кИтАЙ'</span>.</p>
+      <p class="task5_paragraph">Напиши скрипт который выводит сообщение о стоимости доставки в указанную страну. Обязательно используй <span class="mark">switch</span>. Формат сообщения: <span class="mark">'Доставка в [страна] будет стоить [цена] кредитов'</span>.</p>
+      <p class="task5_paragraph">Но доставка есть не везде, если указанной страны нет в списке, то выводи в <span class="mark">alert</span> сообщение <span class="mark">'В вашей стране доставка не доступна'</span>.</p>
+      <p class="task5_paragraph">Ниже приведен список стран и стоимость доставки.</p>
+      <ul class="task-list">
+        <li class="task_item">Китай - 100 кредитов</li>
+        <li class="task_item">Чили - 250 кредитов</li>
+        <li class="task_item">Австралия - 170 кредитов</li>
+        <li class="task_item">Индия - 80 кредитов</li>
+        <li class="task_item">Ямайка - 120 кредитов</li>
+      </ul>
+      <div class="input_wrapper">
+        <label>В какую страну в желаете сделать доставку?
+          <input  class="input_task5" type="text">
+        </label>
+        <div class="button-wrapper">
+          <button type="button" class="task-five_ok">Ок</button>
+        </div>
+      </div>
+    </section>
+    <section class="task" id="task6">
+      <h2 class="section-title">Задание 6</h2>
+      <p>Напиши скрипт который просит посетителя ввести число в <span class="mark">prompt</span> до тех пор, пока посетитель на нажмет <span class="mark">Cancel</span> и каждый раз добавляет введенное значение к общей сумме.</p>
+      <ul class="task-list">
+        <li class="task_item">При загрузке страницы пользователю предлагается в <span class="mark">prompt</span> ввести число. Ввод добавляется к значению переменной <span class="mark">total</span>.
+        </li>
+        <li class="task_item">Операция ввода числа продолжается до тех пор, пока пользователь не нажмет кнопку <span class="mark">Cancel</span> в prompt.
+        </li>
+        <li class="task_item">После того как пользователь прекратил ввод нажав кнопку <span class="mark">Cancel</span>, показать <span class="mark">alert</span> со строкой <span class="mark">'Общая сумма чисел равна [сумма]'</span>.
+        </li>
+      </ul>
+      <p> Делать проверку того, что пользователь ввел именно число, а не произвольный набор символов, не нужно. Если хочешь, в случае некорректного ввода, показывай <span class="mark">alert</span> с текстом <span class="mark">'Было введено не число, попробуйте еще раз'</span>, при этом результат prompt плюсовать к общей сумме не нужно, после чего снова пользователю предлагается ввести число в <span class="mark">prompt</span>.</p>
+    </section>
+    <span class="mark">
+    <script type="module" src="./js/task-1.js"></script> 
+    <script type="module" src="./js/task-2.js"></script> 
+    <script type="module" src="./js/task-3.js"></script> 
+    <script type="module" src="./js/task-4.js"></script> 
+    <script type="module" src="./js/task-5.js"></script> 
+    <!-- <script type="module" src="./js/task-6.js"></script>  -->
+  </body>
+</html>

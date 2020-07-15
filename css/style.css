@@ -1,0 +1,56 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 50px;
+}
+
+.mark {
+  background-color: rgba(27, 31, 35, 0.05);
+}
+
+.nav-menu_list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu_item {
+  margin-right: 40px;
+}
+
+.nav-menu {
+  position: fixed;
+  background-color: aqua;
+  width: 1200px;
+}
+
+.nav-menu_list header {
+  padding-bottom: 60px;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.task {
+  padding-bottom: 100px;
+}
+
+.input_wrapper {
+  display: flex;
+}
+
+.title-padding {
+  padding-top: 50px;
+}
+
+.task5_paragraph {
+  margin-bottom: 20px;
+}
+
+.task_item {
+  margin-bottom: 10px;
+}
