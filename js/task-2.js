@@ -9,12 +9,10 @@ buttonRef.addEventListener('click', () => {
 
   if (ordered === zero) {
     message = 'Нельзя заказать ноль товаров, введите корректное число товаров';
-    alert(message);
   } else if (ordered > total) {
     message = 'На складе недостаточно твоваров!';
-    alert(message);
   } else if (ordered <= total) {
     message = 'Заказ оформлен, с вами свяжется менеджер';
-    alert(message);
   }
+  alert(message);
 });

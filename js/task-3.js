@@ -12,11 +12,10 @@ buttonOkRef.addEventListener('click', () => {
 
   if (ADMIN_PASSWORD == 'jqueryismyjam') {
     message = 'Добро пожаловать!';
-    alert(message);
   } else if (ADMIN_PASSWORD !== 'jqueryismyjam') {
     message = 'Доступ запрещен, неверный пароль!';
-    alert(message);
   }
+  alert(message);
 });
 
 // Код согласно тз!!!!!!!!!!!!!!
@@ -26,11 +25,9 @@ buttonOkRef.addEventListener('click', () => {
 
 // if (ADMIN_PASSWORD == null) {
 //   message = 'Отменено пользователем!';
-//   alert(message);
 // } else if (ADMIN_PASSWORD == 'jqueryismyjam') {
 //   message = 'Добро пожаловать!';
-//   alert(message);
 // } else if (ADMIN_PASSWORD !== 'jqueryismyjam') {
 //   message = 'Доступ запрещен, неверный пароль!';
-//   alert(message);
 // }
+// alert(message);

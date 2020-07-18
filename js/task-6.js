@@ -1,8 +1,8 @@
 'use strict';
-let total = 0;
+const total = 0;
 
 do {
-  let input = prompt('Введите число');
+  const input = prompt('Введите число');
 
   if (input === null) {
     alert(`Отменено пользователем`);

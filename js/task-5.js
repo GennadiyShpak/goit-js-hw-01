@@ -2,11 +2,11 @@
 const inputCoutryRef = document.querySelector('.input_task5');
 const inputButtonOkRef = document.querySelector('.task-five_ok');
 inputButtonOkRef.addEventListener('click', () => {
-  let cost;
-  let country = inputCoutryRef.value;
-  let userInput = country.toLowerCase();
-  let capitalLetter = country.slice(0, 1);
-  let normalizedInput = capitalLetter.toUpperCase() + userInput.substring(1);
+  const cost;
+  const country = inputCoutryRef.value;
+  const userInput = country.toLowerCase();
+  const capitalLetter = country.slice(0, 1);
+  const normalizedInput = capitalLetter.toUpperCase() + userInput.substring(1);
   console.log(normalizedInput);
 
   switch (userInput) {
@@ -47,9 +47,9 @@ inputButtonOkRef.addEventListener('click', () => {
 
 // Код согласно ТЗ!!!!!
 
-// let cost;
-// let userImput = prompt('В какую страну в желаете сделать доставку?');
-// let normalizedInput = userImput.toLowerCase();
+// const cost;
+// const userImput = prompt('В какую страну в желаете сделать доставку?');
+// const normalizedInput = userImput.toLowerCase();
 
 // switch (normalizedInput) {
 //   case 'китай':
